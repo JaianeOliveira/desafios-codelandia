@@ -1,0 +1,149 @@
+:root{
+    --cor1: #574ae8;
+    --cor2: #f3f5f7;
+    --cor3: #FFF;
+    --titulo: #313131;
+    --descricao: #b6b5b6;
+ 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    text-decoration: none;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+header{
+    width: 100vw;
+    height: 20vh;
+    background: linear-gradient(to right, var(--cor1), #3ea1db);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2vh 0 2vh 0;
+}
+#headerTitles{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+
+}
+
+#headerTitles h3{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.2rem;
+    color: var(--cor3);
+    font-weight: normal;
+}
+
+#headerSearch{
+    background: rgba(255, 255, 255, 0.2);
+    width: 80vw;
+    height: 61px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 2vw; 
+}
+#headerSearch i{
+    font-size: 1.2rem;
+    color: var(--cor2);
+    padding-right: 1.5vh;
+}
+#headerSearch input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: var(--cor3);
+    font-family:"Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    border-style: none;
+    outline: none;
+    
+
+}
+#headerSearch input::placeholder{
+    color: white;
+    opacity: 50%;
+    font-family:"Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+main{
+    width: 100vw;
+    height: auto;
+    padding: 6vh 10vw 6vh 10vw;
+    display: flex;
+    flex-direction: column;
+    background: var(--cor2)
+}
+
+.card{
+    background: var(--cor3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    margin-bottom: 3%;
+}
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3vh;
+}
+
+.cardHeader button{
+    background: none;
+    border-style: none;
+}
+.date{
+    color: var(--descricao);
+    font-size: 0.8rem;
+    font-family: "Lexend Deca", sans-serif;
+}
+.like{
+    color: var(--cor1);
+    font-size: 1.2rem;
+}
+.liked{
+    display: none;
+    color: var(--cor1);
+    font-size: 1.2rem;
+}
+
+
+.cardTitle{
+    font-weight: normal;
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--titulo);
+    font-size: 1.2rem;
+    margin-bottom: 1vh;
+}
+
+.cardText{
+    font-family: "Inter",sans-serif;
+    font-weight: 500;
+    color: var(--descricao);
+    font-size: 0.85rem;
+    line-height: 1.6rem;
+}

@@ -1,0 +1,135 @@
+/*Variáveis*/
+:root {
+    --bgSite: #f6f6f6;
+    --bgCard: #ebe9ea;
+    
+    --white: #fff;
+  
+    --title: #181818;
+    --text: #474747;
+  }
+  
+  /*Reset*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+  }
+ 
+  #header1{
+    background: black;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  #header1 a{
+      text-decoration: none;
+      font-style: none;
+      color: var(--white);
+        font-size: 0.8rem;
+        transition: 0.2s ease-in-out;
+  }
+  #header1 a:hover{
+      color: aquamarine;
+  }
+
+  #header2{
+      width: 100vw;
+      height: 5vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.2rem;
+
+  }
+
+  #sectionHome{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #back{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/wallpaper.jpeg);
+    filter: brightness(50%);
+    background-repeat:round no-repeat;
+    background-attachment: scroll;
+    background-position:center;
+    background-size: cover;
+  }
+  #content{
+    padding-left: 8vw;
+    position: absolute;
+  }
+
+  #title{
+    font-weight: bold;
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 2vh;
+    text-align:justify;
+  }
+  #subtitle{
+    text-align: justify;
+    font-weight: 400;
+    color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+#header3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+.headerTitle{
+  font-weight: bold;
+  font-size: 1.6rem;
+  
+}
+.text{
+  margin-top: 2vh;
+  text-align: center;
+  line-height: 1.5rem;
+}
+#divImages{
+  display: flex;
+  flex-wrap:wrap;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  justify-content: space-around;
+}
+#divImages img{
+  width: 250px;
+  height: 150px;
+  flex-grow: 1;
+}
+#divImages button{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 5vh;
+  margin-inline: 1vw;
+  flex-grow: 1;
+  background:  var(--bgCard);
+  border-style: none;
+  border-radius: 5px;
+}
+
+#divImages button:hover{
+  background:#dbdbdb ;
+}

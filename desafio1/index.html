@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css e js -->
+    <script src="./js/index.js"></script>
+    <link href="./css/styles.css" rel="Stylesheet">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lexend+Deca&display=swap" rel="stylesheet">
+    
+    <!-- Site de icones -->
+    <script src="https://kit.fontawesome.com/633ad62518.js" crossorigin="anonymous" defer ></script>
+
+    
+
+    <title>Desafio 1</title>
+
+</head>
+<body>
+    <header>
+        <div id="headerTitles">
+            <h3>Codelandia</h3>
+            <h3>Blog</h3>
+        </div>
+        <div id="headerSearch">
+            <i class="fas fa-search"></i>
+            <input type="search" placeholder="Pesquisar no blog">
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <div class="cardHeader">
+                <p class="date">2 de Jul, 2021</p>
+                <button >
+                    <i class="far fa-heart like " id="like"></i>
+                </button>
+                
+            </div>
+            <h3 class="cardTitle">Agora é oficial: windows 11 está vindo</h3>
+            <p class="cardText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vestibulum vestibulum auctor est. Nam vitae finibus ante. 
+                Duis lobortis tellus vel diam fringilla, eu ullamcorper 
+                ex iaculis.
+            </p>
+        </div>
+        <div class="card">
+            <div class="cardHeader">
+                <p class="date">2 de Jul, 2021</p>
+                <button><i class="far fa-heart like"></i></button>
+            </div>
+            <h3 class="cardTitle">Tim Berners-Lee vai leiloar código-fonte da web</h3>
+            <p class="cardText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum 
+                vestibulum auctor est. Nam vitae finibus ante. Duis lobortis 
+                tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent
+                 et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit 
+                 amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus 
+                 et, interdum ullamcorper libero.
+            </p>
+        </div>
+        <div class="card">
+            <div class="cardHeader">
+                <p class="date">2 de Jul, 2021</p>
+                <button><i class="far fa-heart like"></i></button>
+            </div>
+            <h3 class="cardTitle">Tem Firefox novo no pedaço e você vai querer migrar</h3>
+            <p class="cardText">
+                Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Vestibulum 
+                vestibulum auctor est.
+            </p>
+        </div>
+        <div class="card">
+            <div class="cardHeader">
+                <p class="date">2 de Jul, 2021</p>
+                <button><i class="far fa-heart like"></i></button>
+            </div>
+            <h3 class="cardTitle">John McAfee, criador do antivírus McAfee, morre</h3>
+            <p class="cardText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum 
+                auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, 
+                eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, 
+                lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus 
+                nisl dui, cursus a lectus et, interdum ullamcorper libero.
+            </p>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal" ></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.card', { delay: 200 });
+        ScrollReveal().reveal('.date', { delay: 400 });
+        ScrollReveal().reveal('.cardTitle', { delay: 500 });
+        ScrollReveal().reveal('.cardText', { delay: 600 });
+    </script>
+</body>
+</html>
